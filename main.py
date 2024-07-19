@@ -31,7 +31,6 @@ class GymMembership:
             total_cost += self.additional_features[feature]
         return total_cost
 
-
 class Gym:
     """Manages multiple gym memberships and applies discounts."""
     def _init_(self):
@@ -66,9 +65,9 @@ class Gym:
         if apply_premium:
             total_cost += total_cost * self.premium_surcharge
 
-        return total_cost
+        return total_cost
 
-
+# Ejemplo de uso:
 gym = Gym()
 
 basic_membership = GymMembership(
