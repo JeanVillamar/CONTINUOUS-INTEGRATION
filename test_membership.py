@@ -1,9 +1,8 @@
+"""
+Unit tests for the Gym Membership Management System
+"""
+
 from main import GymMembership, Gym
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-
-
 
 def test_add_feature():
     """Test adding a feature to a membership."""
@@ -30,6 +29,6 @@ def test_calculate_total_cost():
     membership = GymMembership("Basic", 100, {"Feature1": 20})
     gym.add_membership(membership)
     membership.add_feature("Feature1")
-    assert gym.calculate_total_cost("Basic", num_members=1, apply_premium=False) == 120
-    assert gym.calculate_total_cost("Basic", num_members=2, apply_premium=False) == 108
-    assert gym.calculate_total_cost("Basic", num_members=1, apply_premium=True) == 138
+    assert gym.calculate_total_cost("BSC", num_members=1, apply_premium=False) == 120
+    assert gym.calculate_total_cost("BSC", num_members=2, apply_premium=False) == 108
+    assert gym.calculate_total_cost("BSC", num_members=1, apply_premium=True) == 138
