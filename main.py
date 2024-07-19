@@ -68,7 +68,6 @@ class Gym:
 
         return total_cost
 
-# Ejemplo de uso:
 
 gym = Gym()
 
