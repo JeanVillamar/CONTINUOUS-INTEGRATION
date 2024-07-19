@@ -27,11 +27,15 @@ jobs:
         pip install -r requirements.txt
 
     - name: Lint with pylint
+      env:
+        PYTHONPATH: src
       run: |
         pip install pylint
         pylint $(git ls-files '*.py')
 
     - name: Run tests
+      env:
+        PYTHONPATH: src
       run: |
         pip install pytest
         pytest
