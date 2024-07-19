@@ -1,8 +1,9 @@
+from main import GymMembership, Gym
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-from main import GymMembership, Gym
+
 
 def test_add_feature():
     """Test adding a feature to a membership."""
